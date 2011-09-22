@@ -212,7 +212,7 @@ module CarrierWave
 
         active_versions.each do |name, v|
           v.send(:cache_id=, cache_id)
-          v.cache!(processed_parent)
+          v.cache!(new_file)
         end
       end
 
